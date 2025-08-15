@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="stylesheet" href="{{'/assets/css/style.css' | absolute_url}}">
+    
+    <link rel="shortcut icon" type="assets/images/Universe.png" href="favicon.png">
+
     {% feed_meta %}
     {% seo %}
+
   </head>
   <body>
     {% include navigation.html %}

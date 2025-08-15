@@ -1,3 +1,97 @@
+// MARK: Variables
+
+$bgcolor: #ffffff;
+$textcolor: #000000;
+$accent: #13a78c;
+$font: "Georgia", serif;
+
+
+// MARK: Body
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1;
+  color: $textcolor;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.2;
+  color: $textcolor;
+  margin: 32px;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 32px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 32px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: $accent;
+}
+
+
+// MARK: Special Elements
+
+.hero {
+  position: static;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+
+// MARK: Navigation
+
 .current {
-  color: green;
+    color: $accent;
+    font-weight: bold;
+  }
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  text-align: center;
+  background: #0000007f;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 1.2em;
+  color: $textcolor;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: $accent;
 }
