@@ -3,7 +3,7 @@
 $bgcolor: #ffffff;
 $textcolor: #000000;
 $accent: #13a78c;
-$font: "Georgia", serif;
+$font: "EB Garamond", "Georgia", serif;
 
 
 // MARK: Body
@@ -26,8 +26,9 @@ p {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5em;
   margin: 32px;
+  font-weight: 600;
 }
 
 h2 {
@@ -47,21 +48,27 @@ a {
   color: $accent;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 // MARK: Special Elements
 
 .hero {
-  position: static;
-  background-size: cover;
-  background-position: center;
+  position: relative;
   height: 300px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  color: #000000;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  padding: 0 20px 0 20px;
 }
 
 
@@ -73,11 +80,13 @@ a {
   }
 
 nav {
-  position: sticky;
-  top: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
   padding: 15px 0;
   text-align: center;
-  background: #0000007f;
+  background: #ffffff7f;
   backdrop-filter: blur(8px);
   z-index: 10;
 }
@@ -94,4 +103,20 @@ nav a {
 
 nav a:hover {
   color: $accent;
+}
+
+.nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: $accent;
+  padding-left: 32px;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
 }

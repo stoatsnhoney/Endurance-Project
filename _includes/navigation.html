@@ -1,4 +1,6 @@
 <nav>
+  <span class="nav-title">The Endurance Project</span>
+  <div class="nav-links">
   {% for item in site.data.navigation %}
     {% if item.sublinks %}
       <div class="dropdown">
@@ -13,4 +15,5 @@
       <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
     {% endif %}
   {% endfor %}
+  </div>
 </nav>
