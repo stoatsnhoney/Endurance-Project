@@ -49,7 +49,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -58,17 +58,25 @@ img {
 
 .hero {
   position: relative;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 .hero-text {
   position: absolute;
   top: 50%;
-  padding: 0 20px 0 20px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 50px;
+  padding: 0;
+}
+
+.crew-title {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 50px;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.75);
 }
 
 
@@ -89,6 +97,7 @@ nav {
   background: #ffffff7f;
   backdrop-filter: blur(8px);
   z-index: 10;
+  min-height: 30px;
 }
 
 nav a {
@@ -119,4 +128,18 @@ nav a:hover {
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+}
+
+
+// MARK: Media
+
+@media screen and (max-width: 800px) {
+  .nav-title {
+    display: none;
+  }
+
+  .crew-title {
+    left: 40%;
+    text-align: center;
+  }
 }
