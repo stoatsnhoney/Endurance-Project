@@ -2,12 +2,19 @@ collections:
   days:
     output: true
     permalink: :name
+  authors:
+    output: true
+    permalink: :name
 
 defaults:
-
   - scope:
       path: ""
-      type: "post"
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
     values:
       layout: "post"
   - scope:

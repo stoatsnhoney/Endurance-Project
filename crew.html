@@ -7,3 +7,15 @@ title: The Crew
   <img class="crew-img" src="assets/images/crew1.jpg" alt="All 28 crew members standing at the bow of the Endurance.">
   <h1 class="crew-title">The<br>Crew</h1>
 </div>
+
+<h2>The Crew of the Endurance</h2>
+
+<ul>
+  {% for author in site.authors %}
+    <li>
+      <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+      <h3>{{ author.position }}</h3>
+      <p>{{ author.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

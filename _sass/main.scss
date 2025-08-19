@@ -2,7 +2,7 @@
 
 $bgcolor: #ffffff;
 $textcolor: #000000;
-$accent: #ff8400;
+$accent: #ff9d00;
 $font: "EB Garamond", "Georgia", serif;
 
 
@@ -23,7 +23,6 @@ p {
   font-size: 1.2em;
   line-height: 1.2;
   color: $textcolor;
-  margin: 32px;
 }
 
 h1 {
@@ -36,13 +35,11 @@ h1 {
 h2 {
   font-size: 2rem;
   text-align: left;
-  margin: 32px;
 }
 
 h3 {
   font-size: 1.5rem;
   text-align: left;
-  margin: 32px;
 }
 
 a {
@@ -83,6 +80,14 @@ a {
   left: 30%;
 }
 
+.blog-title {
+  left: 20%
+}
+
+.bib-title {
+  left: 30%;
+}
+
 .hero img {
   position: absolute;
   width: 100%;
@@ -102,6 +107,14 @@ a {
 
 .crew-img {
   object-position: 85% center;
+}
+
+.blog-img {
+  object-position: 90% center;
+}
+
+.bib-img {
+  object-position: right center;
 }
 
 
@@ -128,6 +141,17 @@ a {
 .container h2,
 .container p {
   max-width: 600px;
+  margin: 32px;
+}
+
+.divider {
+  display: flex;
+  height: 100px;
+  background-image: url("/assets/images/divider.jpg");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -150,6 +174,7 @@ nav {
   min-height: 30px;
   background-image: url("/assets/images/nav.jpg");
   background-position: center;
+  background-size: cover;
   opacity: 0.7;
   backdrop-filter: blur(8px);
 }
@@ -200,6 +225,16 @@ nav a:hover {
   .ship-img {
     filter: brightness(0.75);
   }
+
+  .blog-title {
+    left: 40%;
+    text-align: center;
+    color: white;
+  }
+
+  .blog-img {
+    filter: brightness(0.75);
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -225,6 +260,16 @@ nav a:hover {
   }
 
   .crew-img {
+    filter: brightness(0.75);
+  }
+
+  .bib-title {
+    left: 41%;
+    text-align: center;
+    color: white;
+  }
+
+  .bib-img {
     filter: brightness(0.75);
   }
 }
