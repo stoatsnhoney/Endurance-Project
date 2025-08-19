@@ -2,7 +2,7 @@
 
 $bgcolor: #ffffff;
 $textcolor: #000000;
-$accent: #13a78c;
+$accent: #ff8400;
 $font: "EB Garamond", "Georgia", serif;
 
 
@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   line-height: 1;
   color: $textcolor;
+  background-color: $bgcolor;
   margin: 0;
 }
 
@@ -26,9 +27,10 @@ p {
 }
 
 h1 {
+  font-family: "Cinzel Decorative", serif;
   font-size: 5em;
   margin: 32px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h2 {
@@ -48,11 +50,6 @@ a {
   color: $accent;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 
 // MARK: Special Elements
 
@@ -70,18 +67,20 @@ img {
   transform: translate(-50%, -50%);
   margin: 0 0 0 50px;
   padding: 0;
+  transition: 0.3s;
 }
 
 .hero-text {
   left: 30%;
+  
 }
 
 .crew-title {
-  left: 15%;
+  left: 20%;
 }
 
 .ship-title {
-  left: 25%;
+  left: 30%;
 }
 
 .hero img {
@@ -90,18 +89,45 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: 0.3s;
 }
 
 .hero-img {
-  object-position: right bottom;
+  object-position: right 80%;
 }
 
 .ship-img {
-  object-position: right center;
+  object-position: right 35%;
 }
 
 .crew-img {
-  object-position: 70% center;
+  object-position: 85% center;
+}
+
+
+// MARK: Containers
+
+.container-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container img {
+  width: 50vw;
+  height: auto;
+}
+
+.container h2,
+.container p {
+  max-width: 600px;
 }
 
 
@@ -120,14 +146,18 @@ nav {
   justify-content: flex-start;
   padding: 15px 0;
   text-align: center;
-  background: #ffffff7f;
-  backdrop-filter: blur(8px);
   z-index: 10;
   min-height: 30px;
+  background-image: url("/assets/images/nav.jpg");
+  background-position: center;
+  opacity: 0.7;
+  backdrop-filter: blur(8px);
 }
 
 nav a {
   display: inline-block;
+  font-family: $font;
+  font-weight: 400;
   font-size: 1.2em;
   color: $textcolor;
   text-decoration: none;
@@ -159,18 +189,42 @@ nav a:hover {
 
 // MARK: Media
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+
+  .ship-title {
+    left: 40%;
+    text-align: center;
+    color: white;
+  }
+
+  .ship-img {
+    filter: brightness(0.75);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
   .nav-title {
     display: none;
+  }
+
+  div .hero-text {
+    text-align: center;
+    left: 40%;
+    color: white;
+  }
+
+  .hero-img {
+    filter: brightness(0.75);
   }
 
   .crew-title {
     left: 40%;
     text-align: center;
+    color: white;
   }
 
-  .ship-title {
-    left: 40%;
-    text-align: center;
+  .crew-img {
+    filter: brightness(0.75);
   }
 }
