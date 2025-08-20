@@ -1,9 +1,17 @@
 <nav>
+
   <img src="/assets/images/nav.jpg" alt="Nautical grid lines.">
+
   <p class="nav-title">The Endurance Project</p>
-  <div class="nav-links">
+  
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+  <ul class="nav-links">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
   {% endfor %}
-  </div>
+  </ul>
+
 </nav>
+

@@ -182,7 +182,6 @@ nav a {
   font-size: 1.3em;
   color: $textcolor;
   text-decoration: none;
-  padding: 0px 24px;
   transition: 0.3s;
 }
 
@@ -196,7 +195,6 @@ nav a:hover {
   font-weight: bold;
   color: $accent;
   padding-left: 32px;
-
 }
 
 .nav-links {
@@ -205,6 +203,8 @@ nav a:hover {
   transform: translateX(-50%);
   display: flex;
   white-space: nowrap;
+  list-style-type: none;
+  gap: 48px;
 }
 
 nav img {
@@ -283,16 +283,16 @@ nav img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
   .nav-title {
     display: none;
   }
-  
+
 }
 
 @media (pointer: coarse) {
-  .nav-links {
+  nav {
     display: none;
   }
 }
