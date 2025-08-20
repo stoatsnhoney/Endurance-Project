@@ -2,7 +2,7 @@
 
 $bgcolor: #ffffff;
 $textcolor: #000000;
-$accent: #ff9d00;
+$accent: #ff5e00;
 $font: "EB Garamond", "Georgia", serif;
 
 
@@ -85,7 +85,7 @@ a {
 }
 
 .bib-title {
-  left: 30%;
+  left: 27%;
 }
 
 .hero img {
@@ -168,26 +168,21 @@ nav {
   position: sticky;
   top: 0;
   justify-content: flex-start;
-  padding: 15px 0;
+  overflow: hidden;
   text-align: center;
   z-index: 10;
-  min-height: 30px;
-  background-image: url("/assets/images/nav.jpg");
-  background-position: center;
-  background-size: cover;
-  opacity: 0.7;
-  backdrop-filter: blur(8px);
+  height: 60px;
+  backdrop-filter: blur(4px);
 }
 
 nav a {
   display: inline-block;
   font-family: $font;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: $textcolor;
   text-decoration: none;
-  padding: 10px 15px;
-  margin: 0 5px;
+  padding: 0px 24px;
   transition: 0.3s;
 }
 
@@ -201,6 +196,7 @@ nav a:hover {
   font-weight: bold;
   color: $accent;
   padding-left: 32px;
+
 }
 
 .nav-links {
@@ -208,7 +204,19 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  white-space: nowrap;
+}
+
+nav img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 
@@ -264,9 +272,10 @@ nav a:hover {
   }
 
   .bib-title {
-    left: 41%;
+    left: 36%;
     text-align: center;
     color: white;
+    scale: 0.9;
   }
 
   .bib-img {

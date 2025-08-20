@@ -1,0 +1,18 @@
+---
+layout: default
+title: Contact
+---
+
+<div class="hero">
+  <img class="blog-img" src="assets/images/Caird1.jpg" alt="The Endurance listing to port in the ice.">
+  <h1 class="blog-title">Blog</h1>
+</div>
+
+<ul>
+  {% for day in site.days %}
+    <li>
+      <h2><a href="{{ day.url }}">{{ day.title }}</a></h2>
+      {{ day.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
