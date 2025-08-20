@@ -282,3 +282,17 @@ nav img {
     filter: brightness(0.75);
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .nav-title {
+    display: none;
+  }
+
+}
+
+@media (pointer:coarse) {
+  .nav-title {
+    display: none;
+  }
+}
