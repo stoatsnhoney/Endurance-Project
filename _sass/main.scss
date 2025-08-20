@@ -283,14 +283,16 @@ nav img {
   }
 }
 
-@media (pointer: coarse) {
+@media screen and (max-width: 1200px) {
 
   .nav-title {
     display: none;
   }
+  
+}
 
+@media (pointer: coarse) {
   .nav-links {
     display: none;
   }
-
 }
