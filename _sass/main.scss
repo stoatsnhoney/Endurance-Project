@@ -291,7 +291,7 @@ nav img {
 
 }
 
-@media (pointer:coarse) {
+@media (any-hover: none) {
   .nav-links {
     display: none;
   }
