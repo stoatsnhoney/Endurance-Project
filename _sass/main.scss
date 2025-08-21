@@ -120,6 +120,10 @@ a {
 
 // MARK: Containers
 
+.content {
+  margin-left: 32px;
+}
+
 .container-left {
   display: flex;
   align-items: center;
@@ -233,90 +237,7 @@ nav {
 }
 
 
-// MARK: Media
-
-@media screen and (max-width: 900px) {
-
-  .ship-title {
-    left: 40%;
-    text-align: center;
-    color: white;
-  }
-
-  .ship-img {
-    filter: brightness(0.75);
-  }
-
-  .blog-title {
-    left: 40%;
-    text-align: center;
-    color: white;
-  }
-
-  .blog-img {
-    filter: brightness(0.75);
-  }
-}
-
-@media screen and (max-width: 1000px) {
-
-  div .hero-text {
-    text-align: center;
-    left: 40%;
-    color: white;
-  }
-
-  .hero-img {
-    filter: brightness(0.75);
-  }
-
-  .crew-title {
-    left: 40%;
-    text-align: center;
-    color: white;
-  }
-
-  .crew-img {
-    filter: brightness(0.75);
-  }
-
-  .bib-title {
-    left: 36%;
-    text-align: center;
-    color: white;
-    scale: 0.9;
-  }
-
-  .bib-img {
-    filter: brightness(0.75);
-  }
-}
-
-
-
-@media screen and (max-width: 1300px) {
-
-  .nav-title {
-    display: none;
-  }
-
-}
-
-@media (pointer: coarse) {
-  nav {
-    display: none;
-  }
-}
-
-
-
-
-
-
-
-
-
-
+// MARK: Nav Btn
 
 nav .menu-icon {
   cursor: pointer;
@@ -395,6 +316,80 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
+
+// MARK: Media Queries
+
+@media screen and (max-width: 900px) {
+
+  .ship-title {
+    left: 40%;
+    text-align: center;
+    color: white;
+  }
+
+  .ship-img {
+    filter: brightness(0.75);
+  }
+
+  .blog-title {
+    left: 40%;
+    text-align: center;
+    color: white;
+  }
+
+  .blog-img {
+    filter: brightness(0.75);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  div .hero-text {
+    text-align: center;
+    left: 40%;
+    color: white;
+  }
+
+  .hero-img {
+    filter: brightness(0.75);
+  }
+
+  .crew-title {
+    left: 40%;
+    text-align: center;
+    color: white;
+  }
+
+  .crew-img {
+    filter: brightness(0.75);
+  }
+
+  .bib-title {
+    left: 36%;
+    text-align: center;
+    color: white;
+    scale: 0.9;
+  }
+
+  .bib-img {
+    filter: brightness(0.75);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+
+  .nav-title {
+    display: none;
+  }
+
+}
+
+@media (pointer: coarse) {
+  nav {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1000px) {
 
   nav .menu-icon,
@@ -407,6 +402,24 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .container-left,
+  .container-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+  .container img {
+    width: 100vw;
   }
 
 }
