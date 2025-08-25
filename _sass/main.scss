@@ -384,12 +384,6 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 }
 
-@media (pointer: coarse) {
-  nav {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1000px) {
 
   nav .menu-icon,
