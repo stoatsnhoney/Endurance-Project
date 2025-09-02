@@ -88,6 +88,10 @@ a {
   left: 27%;
 }
 
+.contact-title {
+  left: 27%;
+}
+
 .hero img {
   position: absolute;
   width: 100%;
@@ -114,6 +118,10 @@ a {
 }
 
 .bib-img {
+  object-position: right center;
+}
+
+.contact-img {
   object-position: right center;
 }
 
@@ -374,6 +382,18 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   .bib-img {
     filter: brightness(0.75);
   }
+
+  .contact-title {
+    left: 40%;
+    text-align: center;
+    color: white;
+    scale: 0.9;
+  }
+
+  .contact-img {
+    filter: brightness(0.75);
+  }
+
 }
 
 @media screen and (max-width: 1300px) {
