@@ -12,12 +12,12 @@ title: The Crew
 
   <h2>The Crew of the Endurance</h2>
 
-  <ul>
+  <ul class="crew-list">
     {% assign sorted_crew = site.crews | sort: "order" %}
     {% for crew in sorted_crew %}
       <li>
-        <h2><a href="{{ crew.url }}">{{ crew.name }}</a></h2>
-        <h3>{{ crew.position }}</h3>
+        <h3><a href="{{ crew.url }}">{{ crew.name }}</a></h2>
+        <h4>{{ crew.position }}</h3>
       </li>
     {% endfor %}
   </ul>

@@ -20,7 +20,7 @@ body {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.2;
   color: $textcolor;
 }
@@ -33,12 +33,17 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: left;
   color: #7b2d00;
 }
 
 h3 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+h4 {
   font-size: 1.5rem;
   text-align: left;
 }
@@ -46,6 +51,12 @@ h3 {
 a {
   text-decoration: none;
   color: $accent;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -126,11 +137,27 @@ a {
   object-position: right center;
 }
 
+.crew-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
 
 // MARK: Containers
 
 .content {
-  margin-left: 32px;
+  margin: 0 32px 0 32px;
+}
+
+.content h3 {
+  margin-top: 32px;
+  line-height: 1;
+}
+
+.content h4 {
+  line-height: 1;
+  margin-top: -24px;
 }
 
 .container-left {
