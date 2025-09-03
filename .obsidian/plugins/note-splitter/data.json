@@ -1,0 +1,8 @@
+{
+  "saveFolderPath": "test",
+  "useContentAsTitle": false,
+  "delimiter": "ipsum.",
+  "removeDelimiter": false,
+  "appendToSplitContent": "",
+  "deleteOriginalNote": false
+}

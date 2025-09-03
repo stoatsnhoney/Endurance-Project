@@ -1,12 +1,12 @@
 ---
-short_name: Hurley
+Short_name: Hurley
 name: Frank Hurley
 position: Photographer
-order: 2
+born: 1885
+died: 1962
+boat: James Caird
+nationality: English
+order: 4
 ---
 
-Frank Hurley was the expedition's photographer.
-
-Frank Hurley was the expedition's photographer.
-Frank Hurley was the expedition's photographer.
-Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.Frank Hurley was the expedition's photographer.
+Loremipsum.

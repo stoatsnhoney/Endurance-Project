@@ -1,0 +1,12 @@
+---
+Short_name: McIlroy
+name: James McIlroy
+position: Surgeon
+born: 1879
+died: 1968
+boat: Stancomb Wills
+nationality: Irish/English
+order: 11
+---
+
+Loremipsum.

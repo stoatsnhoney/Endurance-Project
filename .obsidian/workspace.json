@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d050124cbfb033c2",
+        "id": "22c07052fafcbb3a",
         "type": "tabs",
         "children": [
           {
-            "id": "d83055a8587ac600",
+            "id": "42dde2dd67fee5e7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -154,6 +154,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -162,8 +163,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e0a15f2cef79bf9",
+  "active": "42dde2dd67fee5e7",
   "lastOpenFiles": [
-    "Untitled.md"
+    "_site/wordie.html",
+    "_site/vincent.html",
+    "_site/stephenson.html",
+    "_site/rickinson.html",
+    "_site/orde-lees.html",
+    "_site/mrschippy.html",
+    "_site/mcnish.html",
+    "_site/mcleod.html",
+    "_site/mcilroy.html",
+    "_site/mccarthy.html",
+    "_site/marston.html",
+    "_crews/mrschippy.md",
+    "_crews/gooch.md",
+    "_crews/blackborow.md",
+    "_crews/mcleod.md",
+    "_crews/bakewell.md",
+    "_crews/how.md",
+    "_crews/mccarthy.md",
+    "_crews/vincent.md",
+    "_crews/holness.md",
+    "_crews/stephenson.md",
+    "_crews/green.md",
+    "_crews/mcnish.md",
+    "_crews/orde-lees.md",
+    "_crews/marston.md",
+    "_crews/james.md",
+    "_crews/wordie.md",
+    "_crews/hussey.md",
+    "_crews/greenstreet.md",
+    "_crews/crean.md",
+    "_crews/cheetham.md",
+    "_crews/rickinson.md",
+    "_crews/kerr.md",
+    "_crews/mcilroy.md",
+    "_crews/macklin.md",
+    "_crews/clark.md"
   ]
 }

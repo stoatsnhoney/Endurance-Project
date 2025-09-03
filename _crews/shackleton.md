@@ -1,7 +1,12 @@
 ---
-short_name: Shackleton
+Short_name: Shackleton
 name: Sir Ernest Shackleton
-position: Expedition Leader
+position: Commander
+born: 1874
+died: 1922
+boat: James Caird
+nationality: Irish
 order: 1
 ---
-Jill is an avid fruit grower based in the south of France.
+
+Lorem ipsum.
