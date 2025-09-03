@@ -2,16 +2,16 @@ collections:
   days:
     output: true
     permalink: :name
-  authors:
+  crews:
     output: true
     permalink: :name
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "crews"
     values:
-      layout: "author"
+      layout: "crew"
   - scope:
       path: ""
       type: "posts"
