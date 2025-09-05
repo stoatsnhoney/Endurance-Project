@@ -1,6 +1,6 @@
 ---
 Short_name: McCarthy
-name: Tomthy McCarthy
+name: Timothy McCarthy
 position: Able seaman
 born: 1888
 died: 1917
