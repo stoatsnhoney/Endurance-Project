@@ -1,15 +1,36 @@
 ---
 layout: default
 ---
+
 <h1>{{ page.name }}</h1>
+
 <h2>{{ page.position }}</h2>
 
-Born: {{ page.born }}
-
-Died: {{ page.died }}
-
-Nationality: {{ page.nationality }}
-
-Boat: {{ page.boat }}
+<table style="width:25%">
+  <tr>
+    <th>{{ page.name }}</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="{{ page.image }}" alt="{{ page.name }}" style="width:100%">
+    </td>
+  </tr>
+  <tr>
+    <th>Position</th>
+    <td>{{ page.position }}</td>
+  </tr>
+  <tr>
+    <th>Born</th>
+    <td>{{ page.born }}</td>
+  </tr>
+  <tr>
+    <th>Died</th>
+    <td>{{ page.died }}</td>
+  </tr>
+  <tr>
+    <th>Nationality</th>
+    <td>{{ page.nationality }}</td>
+  </tr>
+</table>
 
 {{ content }}

@@ -20,8 +20,8 @@ title: The Crew
     {% assign sorted_crew = site.crews | sort: "order" %}
     {% for crew in sorted_crew %}
       <li>
-        <h3><a href="{{ crew.url }}">{{ crew.name }}</a></h2>
-        <h4>{{ crew.position }}</h3>
+        <h3><a href="{{ crew.url }}">{{ crew.name }}</a></h3>
+        <h4>{{ crew.position }}</h4>
       </li>
     {% endfor %}
   </ul>
@@ -95,6 +95,6 @@ title: The Crew
     <li>Wolf</li>
   </ul>
 
-
-
 </div>
+
+<div class="spacer"></div>
