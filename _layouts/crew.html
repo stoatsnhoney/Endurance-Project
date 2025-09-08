@@ -20,13 +20,15 @@ layout: default
   </tr>
   {% endif %}
   <tr>
-    <th>Position</th>
+    <th style="width: 40%;">Position</th>
     <td>{{ page.position }}</td>
   </tr>
+  {% if page.born %}
   <tr>
     <th>Born</th>
     <td>{{ page.born }}</td>
   </tr>
+  {% endif %}
   <tr>
     <th>Died</th>
     <td>{{ page.died }}</td>
@@ -41,6 +43,10 @@ layout: default
     <td>{{ page.boat }}</td>
   </tr>
   {% endif %}
+  <tr style="height: 16px;">
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 <p>{{ content }}</p>

@@ -11,10 +11,14 @@
             "id": "42dde2dd67fee5e7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_days/1914/Oct/1914-10-01.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "1914-10-01"
             }
           }
         ]
@@ -165,6 +169,7 @@
   },
   "active": "42dde2dd67fee5e7",
   "lastOpenFiles": [
+    "_crews/bakewell.md",
     "_site/wordie.html",
     "_site/vincent.html",
     "_site/stephenson.html",
@@ -175,12 +180,10 @@
     "_site/mcleod.html",
     "_site/mcilroy.html",
     "_site/mccarthy.html",
-    "_site/marston.html",
     "_crews/mrschippy.md",
     "_crews/gooch.md",
     "_crews/blackborow.md",
     "_crews/mcleod.md",
-    "_crews/bakewell.md",
     "_crews/how.md",
     "_crews/mccarthy.md",
     "_crews/vincent.md",
