@@ -2,19 +2,23 @@
 layout: default
 ---
 
-<h1>{{ page.name }}</h1>
+<h1 class="crew-h1">{{ page.name }}</h1>
 
-<h2>{{ page.position }}</h2>
+<h2 class="crew-h2">{{ page.position }}</h2>
 
-<table style="width:25%">
+<div class="crew-content">
+
+<table>
   <tr>
-    <th>{{ page.name }}</th>
+    <th class="table-header" colspan="2">{{ page.name }}</th>
   </tr>
+  {% if page.image %}
   <tr>
-    <td>
+    <td colspan="2">
         <img src="{{ page.image }}" alt="{{ page.name }}" style="width:100%">
     </td>
   </tr>
+  {% endif %}
   <tr>
     <th>Position</th>
     <td>{{ page.position }}</td>
@@ -31,6 +35,16 @@ layout: default
     <th>Nationality</th>
     <td>{{ page.nationality }}</td>
   </tr>
+  {% if page.boat %}
+  <tr>
+    <th>Boat</th>
+    <td>{{ page.boat }}</td>
+  </tr>
+  {% endif %}
 </table>
 
-{{ content }}
+<p>{{ content }}</p>
+
+</div>
+
+<div class="spacer"></div>

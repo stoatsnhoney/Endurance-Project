@@ -29,7 +29,6 @@ p {
 h1 {
   font-family: "Cinzel Decorative", serif;
   font-size: 5em;
-  margin: 32px;
   font-weight: 400;
   color: $secondary;
 }
@@ -170,6 +169,16 @@ ul {
   line-height: 1.5;
 }
 
+.crew-h1 {
+  font-family: $font;
+  margin: 32px 64px 0 64px;
+  font-weight: bold;
+}
+
+.crew-h2 {
+  margin: 0 64px 0 64px;
+}
+
 
 // MARK: Containers
 
@@ -179,6 +188,10 @@ ul {
 }
 
 .blog-content {
+  margin: 0 64px 0 64px;
+}
+
+.crew-content {
   margin: 0 64px 0 64px;
 }
 
@@ -422,6 +435,32 @@ nav .menu-btn:checked ~ .menu-icon .navicon:after {
 nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+
+// MARK: Tables
+
+table {
+  border-collapse: collapse;
+  border: 1px solid;
+  width: 200px;
+  font-size: 1em;
+  float: right;
+}
+
+table img {
+  width: 10%;
+  height: auto;
+}
+
+th {
+  text-align: right;
+}
+
+.table-header {
+  font-size: 1.2em;
+  padding: 16px;
+  text-align: center;
 }
 
 

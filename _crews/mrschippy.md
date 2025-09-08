@@ -4,7 +4,7 @@ name: Mrs Chippy
 position: Rat-catcher
 born: Unknown
 died: 1915
-boat: N/A
+boat:
 nationality: Mackerel tabby (coat)
 order: 30
 ---
