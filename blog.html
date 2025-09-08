@@ -8,11 +8,19 @@ title: Blog
   <h1 class="blog-title">BloG</h1>
 </div>
 
-<ul>
-  {% for day in site.days %}
-    <li>
-      <h2><a href="{{ day.url }}">{{ day.title }}</a></h2>
-      {{ day.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<div class="blog-content">
+
+  <p>
+    Discover the daily experiences of the crew. 
+  </p>
+
+  <ul>
+    {% for day in site.days %}
+      <li>
+        <h2><a href="{{ day.url }}">{{ day.title }}</a></h2>
+        {{ day.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

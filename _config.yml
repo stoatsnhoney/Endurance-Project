@@ -14,7 +14,7 @@ defaults:
       layout: "crew"
   - scope:
       path: ""
-      type: "posts"
+      type: "days"
     values:
       layout: "post"
   - scope:
