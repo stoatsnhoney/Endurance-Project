@@ -6,6 +6,8 @@ $accent: #7b2d00;
 $font: "EB Garamond", "Georgia", serif;
 
 
+
+
 // MARK: Body
 
 body {
@@ -70,6 +72,12 @@ aside {
   backdrop-filter: blur(4px);
 }
 
+small {
+  font-size: 0.8em;
+}
+
+
+
 
 // MARK: Special Elements
 
@@ -97,7 +105,7 @@ aside {
 }
 
 .crew-title {
-  left: -20%;
+  left: -22.5%;
 }
 
 .ship-title {
@@ -105,7 +113,7 @@ aside {
 }
 
 .blog-title {
-  left: -20%
+  left: -25%
 }
 
 .bib-title {
@@ -181,6 +189,8 @@ aside {
   font-weight: 500;
   font-size: 2em;
 }
+
+
 
 
 // MARK: Containers
@@ -299,6 +309,8 @@ aside {
 }
 
 
+
+
 // MARK: Navigation
 
 .nav-container .current {
@@ -375,6 +387,8 @@ nav {
   object-fit: cover;
   transition: opacity 0.3s;
 }
+
+
 
 
 // MARK: Nav Btn
@@ -457,6 +471,8 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 
 
+
+
 // MARK: Tables
 
 table {
@@ -484,22 +500,9 @@ td {
 }
 
 
+
+
 // MARK: Media Queries
-
-@media screen and (max-width: 1100px) {
-
-  .hero h1 {
-    text-align: center;
-    left: 0;
-    color: white;
-    font-size: 13vw;
-  }
-
-  .hero img {
-    filter: brightness(0.75);
-  }
-
-}
 
 @media screen and (max-width: 1300px) {
 
@@ -514,7 +517,7 @@ td {
 
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 800px) {
 
   nav .menu-icon,
   nav .navicon,
@@ -531,6 +534,17 @@ td {
 }
 
 @media screen and (max-width: 1100px) {
+
+  .hero h1 {
+    text-align: center;
+    left: 0;
+    color: white;
+    font-size: clamp(4.5em, 10vw, 13vw);
+  }
+
+  .hero img {
+    filter: brightness(0.75);
+  }
 
   .container-left,
   .container-right {
@@ -552,22 +566,23 @@ td {
   }
 
   .crew-list {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
-}
-
-@media screen and (max-width: 1100px) {
+  .animal-list {
+    display: flex;
+    flex-direction: column;
+  }
 
   .content {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .blog-content {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
 }
