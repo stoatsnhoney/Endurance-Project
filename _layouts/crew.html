@@ -4,52 +4,58 @@ layout: default
 
 <div class="crew-content">
 
-<h1 class="crew-h1">{{ page.name }}</h1>
+  <h1 class="crew-h1">{{ page.name }}</h1>
 
-<h2 class="crew-h2">{{ page.position }}</h2>
+  <h2 class="crew-h2">{{ page.position }}</h2>
 
-<table>
-  <tr>
-    <th class="table-header" colspan="2">{{ page.name }}</th>
-  </tr>
-  {% if page.image %}
-  <tr>
-    <td colspan="2">
-        <img src="{{ page.image }}" alt="{{ page.name }}" style="width:100%">
-    </td>
-  </tr>
-  {% endif %}
-  <tr>
-    <th style="width: 40%;">Position</th>
-    <td>{{ page.position }}</td>
-  </tr>
-  {% if page.born %}
-  <tr>
-    <th>Born</th>
-    <td>{{ page.born }}</td>
-  </tr>
-  {% endif %}
-  <tr>
-    <th>Died</th>
-    <td>{{ page.died }}</td>
-  </tr>
-  <tr>
-    <th>Nationality</th>
-    <td>{{ page.nationality }}</td>
-  </tr>
-  {% if page.boat %}
-  <tr>
-    <th>Boat</th>
-    <td>{{ page.boat }}</td>
-  </tr>
-  {% endif %}
-  <tr style="height: 16px;">
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+  <div class="crew-excerpt">
+    <p>{{ page.excerpt }}</p>
+  </div>
 
-<p>{{ content }}</p>
+  <table>
+    <tr>
+      <th class="table-header" colspan="2">{{ page.name }}</th>
+    </tr>
+    {% if page.image %}
+    <tr>
+      <td colspan="2">
+          <img src="{{ page.image }}" alt="{{ page.name }}" style="width:100%">
+      </td>
+    </tr>
+    {% endif %}
+    <tr>
+      <th style="width: 40%;">Position</th>
+      <td>{{ page.position }}</td>
+    </tr>
+    {% if page.born %}
+    <tr>
+      <th>Born</th>
+      <td>{{ page.born }}</td>
+    </tr>
+    {% endif %}
+    <tr>
+      <th>Died</th>
+      <td>{{ page.died }}</td>
+    </tr>
+    <tr>
+      <th>Nationality</th>
+      <td>{{ page.nationality }}</td>
+    </tr>
+    {% if page.boat %}
+    <tr>
+      <th>Boat</th>
+      <td>{{ page.boat }}</td>
+    </tr>
+    {% endif %}
+    <tr style="height: 16px;">
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <div class="crew-main"><p>{{ content }}</p></div>
+
+  <div class="crew-excerpt"><p>{{ content | remove_first:page.excerpt }}</p></div>
 
 </div>
 

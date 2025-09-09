@@ -210,6 +210,13 @@ small {
   margin-right: auto;
   max-width: 1200px;
   text-align: left;
+}
+
+.crew-excerpt * {
+  display: none;
+}
+
+.crew-main * {
   display: block;
 }
 
@@ -481,7 +488,7 @@ table {
   width: 300px;
   font-size: 1.2em;
   float: right;
-  margin: 32px;
+  margin: 0 32px 32px 32px;
 }
 
 th {
@@ -511,8 +518,8 @@ td {
   }
 
   .crew-content {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
 }
@@ -599,11 +606,28 @@ td {
   }
 
   table {
-    border-collapse: collapse;
-    border: 1px solid;
     width: 100%;
-    font-size: 1.2em;
     margin: 16px 0 0 0;
+  }
+
+  .crew-excerpt * {
+    display: block !important;
+  }
+
+  .crew-main * {
+    display: none;
+  }
+
+}
+
+@media (pointer: coarse) {
+
+  .hero h1 {
+    font-size: clamp(3.5em, 10vw, 13vw);
+  }
+
+  .hero .bib-title {
+    font-size: clamp(3em, 10vw, 13vw);
   }
 
 }
