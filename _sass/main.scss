@@ -74,46 +74,46 @@ aside {
 // MARK: Special Elements
 
 .hero {
+  display: flex;
   position: relative;
   overflow: hidden;
   max-height: 600px;
   height: 600px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 0 0 50px;
+  position: relative;
+  margin: 0;
   padding: 0;
   transition: 0.3s;
-  font-size: 5em;
+  font-size: 6em;
 }
 
 .hero-text {
-  left: 30%;
-  
+  left: -10%;
 }
 
 .crew-title {
-  left: 21%;
+  left: -20%;
 }
 
 .ship-title {
-  left: 30%;
+  left: -10%;
 }
 
 .blog-title {
-  left: 20%
+  left: -20%
 }
 
 .bib-title {
-  left: 27%;
+  left: -15%;
 }
 
 .contact-title {
-  left: 26%;
+  left: -15%;
 }
 
 .hero img {
@@ -486,70 +486,16 @@ td {
 
 // MARK: Media Queries
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
 
-  .ship-title {
-    left: 40%;
+  .hero h1 {
     text-align: center;
+    left: 0;
     color: white;
+    font-size: 13vw;
   }
 
-  .ship-img {
-    filter: brightness(0.75);
-  }
-
-  .blog-title {
-    left: 40%;
-    text-align: center;
-    color: white;
-  }
-
-  .blog-img {
-    filter: brightness(0.75);
-  }
-}
-
-@media screen and (max-width: 1000px) {
-
-  div .hero-text {
-    text-align: center;
-    left: 40%;
-    color: white;
-  }
-
-  .hero-img {
-    filter: brightness(0.75);
-  }
-
-  .crew-title {
-    left: 40%;
-    text-align: center;
-    color: white;
-  }
-
-  .crew-img {
-    filter: brightness(0.75);
-  }
-
-  .bib-title {
-    left: 36%;
-    text-align: center;
-    color: white;
-    scale: 0.9;
-  }
-
-  .bib-img {
-    filter: brightness(0.75);
-  }
-
-  .contact-title {
-    left: 40%;
-    text-align: center;
-    color: white;
-    scale: 0.9;
-  }
-
-  .contact-img {
+  .hero img {
     filter: brightness(0.75);
   }
 
@@ -568,7 +514,7 @@ td {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
 
   nav .menu-icon,
   nav .navicon,
@@ -584,7 +530,7 @@ td {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
   .container-left,
   .container-right {
@@ -594,6 +540,11 @@ td {
 
   .container h2 {
     text-align: center;
+    margin-top: 32px;
+  }
+
+  .container p {
+    margin-bottom: 32px;
   }
 
   .container img {
@@ -614,6 +565,11 @@ td {
     margin-right: 64px;
   }
 
+  .blog-content {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -628,11 +584,11 @@ td {
   }
 
   table {
-  border-collapse: collapse;
-  border: 1px solid;
-  width: 100%;
-  font-size: 1.2em;
-  margin: 16px 0 0 0;
-}
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+    font-size: 1.2em;
+    margin: 16px 0 0 0;
+  }
 
 }
