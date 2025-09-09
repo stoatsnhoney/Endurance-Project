@@ -21,7 +21,7 @@ body {
 
 p {
   font-size: 1.4em;
-  line-height: 1.2;
+  line-height: 1.5;
   color: $textcolor;
 }
 
@@ -58,6 +58,16 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(500%);
+  padding: 0 16px 16px 16px;
+  background-color: #0000007f;
+  backdrop-filter: blur(4px);
 }
 
 
@@ -141,20 +151,17 @@ ul {
 
 .crew-list {
   display: grid;
-  grid-template-columns: 33vw 33vw;
-  margin: 0;
-  padding: 0;
-  gap: 0px 32px;
-  justify-content: center;
+  grid-template-columns: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 .animal-list {
-  display: grid;
-  grid-template-columns: 33vw 33vw;
-  margin: 0;
-  padding: 0;
-  gap: 0px 32px;
-  justify-content: center;
+  column-count: 2;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
 }
 
 .animal-list li {
@@ -164,14 +171,14 @@ ul {
 
 .crew-h1 {
   font-family: $font;
-  margin: 16px 64px 0 64px;
+  margin: 32px 0 0 0;
   font-weight: 600;
   font-size: 3em;
 }
 
 .crew-h2 {
-  margin: 0 64px 0 64px;
-  font-weight: 600;
+  margin: 8px 64px 0 0;
+  font-weight: 500;
   font-size: 2em;
 }
 
@@ -179,16 +186,30 @@ ul {
 // MARK: Containers
 
 .content {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1000px;
-}
-
-.blog-content {
-  margin: 0 64px 0 64px;
+  text-align: left;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .crew-content {
-  margin: 0 64px 0 64px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: left;
+  display: block;
+}
+
+.blog-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+  display: block;
 }
 
 .content h3 {
@@ -230,7 +251,7 @@ ul {
 }
 
 .container h2 {
-  line-height: 2.5;
+  padding-bottom: 16px;
 }
 
 .container h2,
@@ -442,8 +463,9 @@ table {
   border-collapse: collapse;
   border: 1px solid;
   width: 300px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   float: right;
+  margin: 32px;
 }
 
 th {
@@ -456,7 +478,7 @@ td {
 }
 
 .table-header {
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 16px;
   text-align: center;
 }
@@ -539,6 +561,11 @@ td {
     display: none;
   }
 
+  .crew-content {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -577,5 +604,35 @@ td {
   display: flex;
   flex-direction: column;
   }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  .content {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .crew-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crew-content p {
+    margin: 16px 0 0 0;
+  }
+
+  table {
+  border-collapse: collapse;
+  border: 1px solid;
+  width: 100%;
+  font-size: 1.2em;
+  margin: 16px 0 0 0;
+}
 
 }

@@ -10,6 +10,8 @@ title: Blog
 
 <div class="blog-content">
 
+  <h2>Daily Logs</h2>
+
   <p>
     Discover the daily experiences of the crew. 
   </p>
@@ -17,9 +19,23 @@ title: Blog
   <ul>
     {% for day in site.days %}
       <li>
-        <h2><a href="{{ day.url }}">{{ day.title }}</a></h2>
+        <h3><a href="{{ day.url }}">{{ day.title }}</a></h3>
       </li>
     {% endfor %}
   </ul>
-
+<!--
+  <aside>
+    <h3>Composers</h3>
+    <ul>
+      <li>
+        <a href="/musicBlog.html">All</a>
+      </li>
+      {% for tag in site.data.music_tags %}
+      <li>
+        <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+-->
 </div>
