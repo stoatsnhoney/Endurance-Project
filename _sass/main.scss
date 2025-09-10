@@ -44,6 +44,7 @@ h3 {
   font-size: 2rem;
   text-align: left;
   font-weight: 600;
+  color: $accent
 }
 
 h4 {
@@ -173,6 +174,20 @@ small {
 }
 
 .animal-list li {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.aurora-list {
+  column-count: 2;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  text-wrap: none;
+  gap: 128px;
+}
+
+.aurora-list li {
   font-size: 1.5em;
   line-height: 1.5;
 }
@@ -584,6 +599,12 @@ td {
   .animal-list {
     display: flex;
     flex-direction: column;
+  }
+
+  .aurora-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   .content {
