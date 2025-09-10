@@ -98,7 +98,7 @@ small {
   margin: 0;
   padding: 0;
   transition: 0.3s;
-  font-size: 6em;
+  font-size: clamp(5em, 7vw, 8em);
 }
 
 .hero-text {
@@ -653,6 +653,26 @@ td {
 
   .hero .bib-title {
     font-size: clamp(3em, 10vw, 13vw);
+  }
+
+}
+
+@media (pointer: coarse) and (max-width: 1100px) {
+
+  .nav-container a:hover {
+    color: $textcolor;
+  }
+
+}
+
+@media (pointer: coarse) and (min-width: 1100px) {
+
+  .hero h1 {
+    font-size: clamp(3.5em, 8vw, 10vw);
+  }
+
+    .hero .bib-title {
+    font-size: clamp(3em, 8vw, 10vw);
   }
 
 }
