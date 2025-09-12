@@ -235,13 +235,20 @@ small {
   display: block;
 }
 
-.blog-content {
-  margin-left: auto;
-  margin-right: auto;
+.blog-container {
+  display: flex;
   max-width: 1000px;
   width: 100%;
-  text-align: left;
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content {
+  width: 600px;
+}
+
+.blog-sidebar {
+  width: 400px;
 }
 
 .content h1 {

@@ -8,34 +8,34 @@ title: Blog
   <h1 class="blog-title">BLOG</h1>
 </div>
 
-<div class="blog-content">
+<div class="blog-container">
 
-  <h2>Daily Logs</h2>
+  <div class="blog-content">
 
-  <p>
-    Discover the daily experiences of the crew. 
-  </p>
+    <h2>Daily Logs</h2>
 
-  <ul>
-    {% for day in site.days %}
-      <li>
-        <h3><a href="{{ day.url }}">{{ day.title }}</a></h3>
-      </li>
-    {% endfor %}
-  </ul>
-<!--
-  <aside>
-    <h3>Composers</h3>
+    <p>
+      Discover the daily experiences of the crew. 
+    </p>
+
     <ul>
-      <li>
-        <a href="/musicBlog.html">All</a>
-      </li>
-      {% for tag in site.data.music_tags %}
-      <li>
-        <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
-      </li>
+      {% for day in site.days %}
+        <li>
+          <h3><a href="{{ day.url }}">{{ day.title }}</a></h3>
+        </li>
       {% endfor %}
     </ul>
-  </aside>
--->
+
+  </div>
+
+  <div class="blog-sidebar">
+    <h2>Search by Date</h2>
+      <ul>
+        {% assign days_1914 = site.days | where_exp: "item", "item.path contains '_days/1915/'" %}
+        {% for day in days_1914 %}
+          <li><a href="{{ day.url }}">{{ day.title }}</a></li>
+        {% endfor %}
+      </ul>
+  </div>
+
 </div>
