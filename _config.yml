@@ -5,6 +5,12 @@ collections:
   crews:
     output: true
     permalink: :name
+  tags:
+    output: true
+    permalink: /tags/:name/
+  years:
+    output: true
+    permalink: /years/:name/
 
 defaults:
   - scope:

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>{{ page.tag }}</h1>
+
+
+  
+  <ol class="image-gallery">
+      {% for day in site.days %}
+    {% if day.years contains page.tag %}
+    <li>
+      <a href="{{ day.url }}">
+          <h2>{{ day.title }}</h2>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    </ol>

@@ -28,6 +28,14 @@ title: Blog
 
   </div>
 
+  <ul>
+    {% for tag in site.data.years %}
+    <li>
+      <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+<!--
   <div class="blog-sidebar">
     <h2>Search by Date</h2>
       <ul>
@@ -37,5 +45,5 @@ title: Blog
         {% endfor %}
       </ul>
   </div>
-
+-->
 </div>
