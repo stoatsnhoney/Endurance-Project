@@ -7,10 +7,7 @@ collections:
     permalink: :name
   tags:
     output: true
-    permalink: /tags/:name/
-  years:
-    output: true
-    permalink: /years/:name/
+    permalink: /:name/
 
 defaults:
   - scope:

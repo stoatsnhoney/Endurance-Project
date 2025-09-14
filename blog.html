@@ -29,9 +29,9 @@ title: Blog
   </div>
 
   <ul>
-    {% for tag in site.data.years %}
+    {% for tag in site.data.tags %}
     <li>
-      <a href="/tags/{{ tag.name }}">{{ tag.name }}</a>
+      <a href="/{{ tag.name }}">{{ tag.name }}</a>
     </li>
     {% endfor %}
   </ul>
