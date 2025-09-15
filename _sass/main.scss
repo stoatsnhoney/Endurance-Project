@@ -113,6 +113,10 @@ small {
   left: -10%;
 }
 
+.about-title {
+  left: -20%;
+}
+
 .crew-title {
   left: -22.5%;
 }
@@ -485,7 +489,7 @@ nav .menu-btn {
 }
 
 nav .menu-btn:checked ~ .nav-container {
-  height: 450px;
+  height: 500px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   backdrop-filter: blur(8px);
 }
