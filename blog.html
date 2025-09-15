@@ -18,32 +18,32 @@ title: Blog
       Discover the daily experiences of the crew. 
     </p>
 
-    <ul>
+    <ol>
       {% for day in site.days %}
         <li>
           <h3><a href="{{ day.url }}">{{ day.title }}</a></h3>
         </li>
       {% endfor %}
-    </ul>
+    </ol>
 
   </div>
 
-  <ul>
-    {% for tag in site.data.tags %}
-    <li>
-      <a href="/{{ tag.name }}">{{ tag.name }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-<!--
   <div class="blog-sidebar">
+
     <h2>Search by Date</h2>
-      <ul>
-        {% assign days_1914 = site.days | where_exp: "item", "item.path contains '_days/1915/'" %}
-        {% for day in days_1914 %}
-          <li><a href="{{ day.url }}">{{ day.title }}</a></li>
-        {% endfor %}
-      </ul>
+
+    <h3>1914</h3>
+
+    <ol>
+      {% for tag in site.data.tags %}
+        {% if tag.name contains '1914' %}
+          <li>
+            <a href="/{{ tag.name }}">{{ tag.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+
   </div>
--->
+
 </div>

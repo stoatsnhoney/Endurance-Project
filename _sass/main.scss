@@ -63,6 +63,14 @@ ul {
   padding: 0;
 }
 
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
 aside {
   position: absolute;
   top: 0;
@@ -247,8 +255,16 @@ small {
   width: 600px;
 }
 
+.blog-content ol {
+  line-height: 1;
+}
+
 .blog-sidebar {
   width: 400px;
+}
+
+.blog-sidebar h3 {
+  line-height: 0;
 }
 
 .content h1 {
