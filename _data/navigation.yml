@@ -1,12 +1,12 @@
 - name: Home
   link: /
 - name: The Ship
-  link: /ship.html
+  link: /ship
 - name: The Crew
-  link: /crew.html
+  link: /crew
 - name: Blog
-  link: /blog.html
+  link: /blog
 - name: Bibliography
-  link: /bibliography.html
+  link: /bibliography
 - name: Contact
-  link: /contact.html
+  link: /contact
