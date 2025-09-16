@@ -1,7 +1,5 @@
 - name: Home
   link: /
-- name: About
-  link: /about
 - name: The Ship
   link: /ship
 - name: The Crew
