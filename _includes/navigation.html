@@ -13,7 +13,9 @@
 
     <ul class="nav-links">
     {% for item in site.data.navigation %}
-      <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
+      {% assign nav_url = item.link | replace: '.html', '' | replace: '/$', '' %}
+      {% assign page_url = page.url | replace: '.html', '' | replace: '/$', '' %}
+      <li><a href="{{ item.link }}"{% if nav_url == page_url %} class="current"{% endif %}>{{ item.name }}</a></li>
     {% endfor %}
     </ul>
 

@@ -21,7 +21,7 @@ title: Blog
     <ol>
       {% for day in site.days %}
         <li>
-          <h3><a href="{{ day.url }}">{{ day.title }}</a></h3>
+          <h3><a href="{{ day.url }}">{{ day.date | date: "%B %-d, %Y" }}</a></h3>
         </li>
       {% endfor %}
     </ol>
