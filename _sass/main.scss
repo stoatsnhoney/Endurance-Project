@@ -250,8 +250,16 @@ small {
   display: none;
 }
 
+
 .crew-main * {
   display: block;
+}
+
+/* Fix: Keep <em> and <i> inline inside .crew-content */
+.crew-content em,
+.crew-content i,
+.crew-content a {
+  display: inline;
 }
 
 .blog-container {
@@ -669,8 +677,14 @@ td {
     margin: 16px 0 0 0;
   }
 
+
   .crew-excerpt * {
     display: block !important;
+  }
+  .crew-content em,
+  .crew-content i,
+  .crew-content a {
+    display: inline !important;
   }
 
   .crew-main * {
