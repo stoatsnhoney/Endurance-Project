@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 3rem;
   text-align: left;
+  font-weight: 600;
   color: $accent;
 }
 
@@ -383,7 +384,7 @@ small {
 // MARK: TOC
 
 .toc {
-  float: right;
+  float: none;
   margin: 0 0 32px 32px;
 }
 
@@ -397,6 +398,25 @@ small {
 
 .toc-link-h3 {
   padding-left: 16px;
+}
+
+.toc-list {
+  margin-top: 32px;
+}
+
+details {
+  margin-top: 32px;
+}
+
+summary {
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 600;
+  color: $accent;
+}
+
+summary::marker {
+  color: $accent;
 }
 
 
