@@ -35,13 +35,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: left;
   color: $accent;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: left;
   font-weight: 600;
   color: $accent
@@ -237,6 +237,7 @@ small {
   display: block;
   padding-left: 0;
   padding-right: 0;
+  box-sizing: border-box;
 }
 
 .crew-content {
@@ -374,6 +375,28 @@ small {
   color: #ffffff;
   font-weight: bold;
   margin-right: 64px;
+}
+
+
+
+
+// MARK: TOC
+
+.toc {
+  float: right;
+  margin: 0 0 32px 32px;
+}
+
+.toc-item {
+  scroll-margin-top: 60px;
+}
+
+.toc-link-h2 {
+  font-weight: bold;
+}
+
+.toc-link-h3 {
+  padding-left: 16px;
 }
 
 
@@ -650,8 +673,8 @@ td {
   }
 
   .content {
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .blog-content {
@@ -661,7 +684,7 @@ td {
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
   .crew-content {
     display: flex;
@@ -689,6 +712,14 @@ td {
 
   .crew-main * {
     display: none;
+  }
+
+  .blog-container {
+    flex-direction: column-reverse;
+  }
+
+  .blog-sidebar {
+    margin-left: 32px;
   }
 
 }
