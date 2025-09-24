@@ -6,6 +6,7 @@ born: 1894
 died: 1949
 boat: Stancomb Wills
 nationality: Welsh
+image: "assets/images/crew/blackborow.jpg"
 order: 28
 ---
 

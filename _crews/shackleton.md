@@ -6,7 +6,7 @@ born: 1874
 died: 1922
 boat: James Caird
 nationality: Irish
-image: "assets/images/crew/Shackleton1.jpg"
+image: "assets/images/crew/shackleton.jpg"
 order: 1
 ---
 
