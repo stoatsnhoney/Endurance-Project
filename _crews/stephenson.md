@@ -6,6 +6,7 @@ born: 1889
 died: 1889
 boat: Stancomb Wills
 nationality: English
+image: "assets/images/crew/stephenson.jpg"
 order: 21
 ---
 

@@ -6,6 +6,7 @@ born: 1879
 died: 1941
 boat: James Caird
 nationality: English
+image: "assets/images/crew/vincent.jpg"
 order: 23
 ---
 

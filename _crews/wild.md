@@ -6,6 +6,7 @@ born: 1873
 died: 1939
 boat: James Caird
 nationality: English
+image: "assets/images/crew/wild.jpg"
 order: 2
 ---
 

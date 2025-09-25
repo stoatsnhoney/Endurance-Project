@@ -6,6 +6,7 @@ born: 1869
 died: 1960
 boat: Dudley Docker
 nationality: Scottish
+image: "assets/images/crew/mcleod.jpg"
 order: 27
 ---
 

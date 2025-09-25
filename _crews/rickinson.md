@@ -6,6 +6,7 @@ born: 1883
 died: 1945
 boat: Stancomb Wills
 nationality: English
+image: "assets/images/crew/rickinson.jpg"
 order: 9
 ---
 

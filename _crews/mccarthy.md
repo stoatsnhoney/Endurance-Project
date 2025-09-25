@@ -6,6 +6,7 @@ born: 1888
 died: 1917
 boat: James Caird
 nationality: Irish
+image: "assets/images/crew/mccarthy.jpg"
 order: 24
 ---
 
