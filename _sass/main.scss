@@ -806,3 +806,17 @@ td {
   font-size: 10em;
   margin-bottom: 0;
 }
+
+
+
+
+// MARK: Post Navigation
+
+.post-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post-nav a {
+  font-size: 1.4em;
+}

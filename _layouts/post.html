@@ -10,17 +10,17 @@ layout: default
 
     {{ content }}
 
-	<div class="previous-next-post-links">
+	<div class="post-nav">
 		
-		<div>
+		<div class="post-prev">
 			{% if page.previous != nil %}
-				<a class="arrow arrow__left" href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.date | date: "%B %-d, %Y" }}</a>
+				<a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.date | date: "%B %-d, %Y" }}</a>
 			{% endif %}
 		</div>
 
-		<div>
+		<div class="post-next">
 			{% if page.next != nil %}
-				<a class="arrow arrow__right" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.date | date: "%B %-d, %Y" }}</a>
+				<a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.date | date: "%B %-d, %Y" }}</a>
 			{% endif %}
 		</div>
 
